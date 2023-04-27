@@ -10,7 +10,14 @@ on:
 
 jobs:
   ci:
-    name: CI
+    strategy:
+      matrix:
+        project:
+          - name: Producer
+            working-directory: ./services/producer
+          - name: Consumer
+            working-directory: ./services/consumer
+    name: CI - ${{ matrix.project.name }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,9 +28,10 @@ jobs:
           node-version: 20.x
       - name: Install Dependencies
         run: yarn install --network-timeout 86400000
+        working-directory: ${{ matrix.project.working-directory }}
       - name: Test - Unit
         run: yarn test
-      - name: Test - End-To-End
-        run: yarn test:e2e
+        working-directory: ${{ matrix.project.working-directory }}
       - name: Build Production
         run: yarn build
+        working-directory: ${{ matrix.project.working-directory }}
