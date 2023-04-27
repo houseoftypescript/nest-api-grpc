@@ -1,0 +1,117 @@
+{
+  "item": [
+    {
+      "name": "heroes",
+      "description": "",
+      "item": [
+        {
+          "name": "{id}",
+          "description": "",
+          "item": [
+            {
+              "id": "3e4df8fa-b93e-49ba-b7bd-158719091264",
+              "name": "Heroes Controller get By Id",
+              "request": {
+                "name": "Heroes Controller get By Id",
+                "description": {},
+                "url": {
+                  "path": ["heroes", ":id"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": [
+                    { "type": "any", "value": "<number>", "key": "id" }
+                  ]
+                },
+                "method": "GET",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "efefbde4-dcb6-47c3-89b8-d4147d511e1b",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["heroes", ":id"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [],
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "health",
+      "description": "",
+      "item": [
+        {
+          "id": "3250c274-22a6-4ba2-a16f-fdf4541c2e76",
+          "name": "Health Controller get Health",
+          "request": {
+            "name": "Health Controller get Health",
+            "description": {},
+            "url": {
+              "path": ["health"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": []
+            },
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f7c026cf-e89b-475d-a729-1db2d1805255",
+              "originalRequest": {
+                "url": {
+                  "path": ["health"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                { "key": "Content-Type", "value": "application/json" }
+              ],
+              "body": "{\n  \"status\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [{ "key": "baseUrl", "value": "/" }],
+  "info": {
+    "_postman_id": "aa9a5b40-957b-47db-b3b3-072ff12bf33a",
+    "name": "Nest.js - gRPC - Template",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Nest.js - gRPC - Template",
+      "type": "text/plain"
+    }
+  }
+}
