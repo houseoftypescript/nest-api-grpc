@@ -819,18 +819,18 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-1.2.2.tgz#d9ddb143776e309dbc1a518ac1607fddac1e140e"
   integrity sha512-3dHxLXs3M0GPiriAcCFFJQHoDFUuzTD5w6JDhE7TyfT89YKpe6tcCCIqOZWdXmt9AZjjK30RkHRSFF+QEnWFQg==
 
-"@nestjs/microservices@9.4.3":
-  version "9.4.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-9.4.3.tgz#3587184ef65e9943e7506c02a87e137871088f4f"
-  integrity sha512-piMw8d3C4ppc5St5AhQEtecMhyeBK2Q1VYk4AL3NKtG6U0fzz/6KLiETpWdKXmazeI/m7qac2upOvwmRzle0aA==
+"@nestjs/microservices@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-10.0.0.tgz#99de888c5eecc4762947bd3f8fdccd0c41b47baa"
+  integrity sha512-ZXMny2nUFPLWaFxlkwUlEYHmDWUFilkscMHaDbCMdYLVvRsNPm3nM2dBuunu/K+dqQIgUdNq+Yqo3C3tUyeAIA==
   dependencies:
     iterare "1.2.1"
     tslib "2.5.3"
 
-"@nestjs/platform-express@9.4.3":
-  version "9.4.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.4.3.tgz#f61b75686bdfce566be3b54fa7bb20a4d87ed619"
-  integrity sha512-FpdczWoRSC0zz2dNL9u2AQLXKXRVtq4HgHklAhbL59X0uy+mcxhlSThG7DHzDMkoSnuuHY8ojDVf7mDxk+GtCw==
+"@nestjs/platform-express@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-10.0.0.tgz#2178f29e5061cf3fa6b590ba4b525837c3e4ee23"
+  integrity sha512-jOQBPVpk7B4JFXZZwxHSsY6odIqZlea9CbqKzu/hfDyqRv+AwuJk5gprvvL6RpWAHNyRMH1r5/14bqcXD3+WGw==
   dependencies:
     body-parser "1.20.2"
     cors "2.8.5"
